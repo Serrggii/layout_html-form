@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
-
+    <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <fieldset
+      class="inputs-block"
+      >
         <legend>
       Personal information
         </legend>
-        <label>
+        <label
+        class="input-row"
+        >
         Surname:
           <input 
         name="surname"
@@ -33,7 +36,7 @@
         name="name" 
         autocomplete="off"
       >
-        </label>>
+        </label>
         <label 
         class="input-row"
         >
@@ -144,6 +147,21 @@
           <select multiple=""
           name="cars"
           >
+            <option 
+          value="BMW"
+          >
+            BMW
+            </option>
+            <option 
+          value="Audi"
+          >
+            Audi
+            </option>
+            <option 
+          value="Lada"
+          >
+            Lada
+            </option>
           </select>
         </label>
         <label
@@ -169,7 +187,7 @@
         <label 
         class="input-row"
       >
-        Comments
+        Comments:
           <textarea
         name="comments"
      ></textarea>
@@ -194,11 +212,11 @@
           </select>
         </label>
       </fieldset>
-      <buttom
+      <button
         type="submit" 
       >
        Submit
-      </buttom>
+      </button>
     </form>
   </body>
 </html>
